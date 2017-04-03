@@ -21,6 +21,7 @@ All shortcuts are prefaced with ALT+[hotkey]
 10. o = Working Outage
 
 ## Nuances
+* It will not put the dispostion in for you, you **must** do that yourself. 
 
 *	If you hold the key down it will continue to execute the same command. There is no cool down so to speak. 
 
