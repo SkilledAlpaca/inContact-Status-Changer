@@ -17,6 +17,7 @@
 ; 09) w = Working Task
 ; 10) o = Working Outage
 ; ----------------------------------
+Menu, Tray, Icon, allcovered_logo.ico 
 
 ; ==================================
 ; Hotkeys
