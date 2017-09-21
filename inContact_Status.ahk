@@ -8,15 +8,15 @@
 ; Status Hotkeys
 ; 01) a = Available
 ; 02) q = Unavailable
-; 03) c = Working Chat
-; 04) u = Working Unassigned
-; 05) b = Break
-; 06) l = Lunch
-; 07) m = Meeting
-; 08) t = Training
-; 09) w = Working Task
-; 10) o = Working Outage
+; 03) u = Working Unassigned
+; 04) b = Break
+; 05) l = Lunch
+; 06) m = Meeting
+; 07) t = Training
+; 08) w = Working Task
+; 09) o = Working Outage
 ; ----------------------------------
+Menu, Tray, Icon, allcovered_logo.ico 
 
 ; ==================================
 ; Hotkeys
@@ -39,19 +39,11 @@ Click 115, 115
 return
 
 ; ----------------------------------
-; Set status to Working Chat
-; ----------------------------------
-!c::
-Gosub ActivateIC
-Click 115, 140
-return
-
-; ----------------------------------
 ; Set status to Working Unassigned
 ; ----------------------------------
 !u::
 Gosub ActivateIC
-Click 115, 165
+Click 115, 140
 return
 
 ; ----------------------------------
@@ -59,16 +51,15 @@ return
 ; ----------------------------------
 !b::
 Gosub ActivateIC
-Click 115, 190
+Click 115, 165
 return
 
 ; ----------------------------------
-; Set status to Lunch*
+; Set status to Lunch
 ; ----------------------------------
 !l::
 Gosub ActivateIC
-Gosub DDown
-Gosub Other
+Click 115, 190
 return
 
 ; ----------------------------------
@@ -76,7 +67,6 @@ return
 ; ----------------------------------
 !m::
 Gosub ActivateIC
-Gosub DDown
 Gosub DDown
 Gosub Other
 return
@@ -86,7 +76,6 @@ return
 ; ----------------------------------
 !t::
 Gosub ActivateIC
-Gosub DDown
 Gosub DDown
 Gosub DDown
 Gosub Other
@@ -100,16 +89,14 @@ Gosub ActivateIC
 Gosub DDown
 Gosub DDown
 Gosub DDown
-Gosub DDown
 Gosub Other
 return
 
 ; ----------------------------------
 ; Set status to Working Outage
 ; ----------------------------------
-!o::
+!w::
 Gosub ActivateIC
-Gosub DDown
 Gosub DDown
 Gosub DDown
 Gosub DDown
