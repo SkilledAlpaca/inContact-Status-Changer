@@ -95,7 +95,7 @@ return
 ; ----------------------------------
 ; Set status to Working Outage
 ; ----------------------------------
-!w::
+!o::
 Gosub ActivateIC
 Gosub DDown
 Gosub DDown
